@@ -2,7 +2,7 @@
   <div class="gallery-item">
     <div class="container" ref="container">
       <a :href="link">
-        <AppImage :lazy-src="img" :lazy-srcset="img" />
+        <AppImage :lazy-src="img" :lazy-srcset="img" v-bind:class="{ selected: isSelected }" />
       </a>
       <i
         v-bind:class="{ selected: !isSelected }"
